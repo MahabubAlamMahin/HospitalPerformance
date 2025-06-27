@@ -64,8 +64,4 @@ The Power BI dashboard (`Visual Representation.pbix`) includes:
 
 ---
 
-## 📬 Contact
-
-**Md. Mahabub Alam Mahin**  
-Feel free to reach out on [GitHub](https://github.com/) or [LinkedIn](https://linkedin.com/) for any questions or feedback.
 
