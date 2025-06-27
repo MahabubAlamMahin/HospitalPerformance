@@ -1,53 +1,71 @@
-# **🏥 Healthcare Data Analytics Project**
-This project showcases data cleaning, transformation, and analysis on a healthcare dataset using SQL and Power BI. The aim is to derive actionable insights from patient records, hospital data, and billing information.
+# 🏥 Healthcare Data Analytics Project
 
-📁 Files Included
-File Name	Description
-healthcare_dataset.csv	Raw healthcare data including patient details, billing, admission info, and test results.
-healthcare_usingSQL.sql	SQL script for cleaning, transforming, and analyzing the dataset.
-Visual Representation.pbix	Power BI dashboard visualizing key metrics and insights.
+This project demonstrates data cleaning, transformation, and analytical insights generation on a healthcare dataset using **SQL** and **Power BI**. The goal is to extract meaningful patterns from patient and hospital data and visualize them for decision-making.
 
-🧼 Data Cleaning & Preprocessing (SQL)
-Performed in healthcare_usingSQL.sql:
+---
 
-✅ Renamed inconsistent column headers (Patient Name → Patient_Name)
-✅ Converted all patient names to uppercase for consistency.
-✅ Standardized billing values to decimal(10,2) format.
-✅ Replaced ambiguous Test_Results (e.g., "Inconclusive") with "Pending".
-✅ Removed duplicate entries using ROW_NUMBER() and DELETE.
+## 🧼 Data Cleaning & Preprocessing (SQL)
 
-📊 Analytical Queries
-1. Hospital Insights
-Count of patients per hospital.
-Average hospital stay duration (DATEDIFF()).
-Hospitals ranked by average and total billing.
-Top 10 hospitals by billing and patient volume.
+All cleaning operations were done in [`healthcare_usingSQL.sql`](healthcare_usingSQL.sql):
 
-2. Patient-Level Insights
-Patients with the highest bills.
-Top 10 clients by billing amount.
-Identification of negative or unidentified billings.
+- ✅ Renamed inconsistent column headers (`Patient Name` → `Patient_Name`)
+- ✅ Converted all patient names to uppercase
+- ✅ Standardized billing values to `decimal(10,2)` format
+- ✅ Replaced ambiguous test results (e.g., `"Inconclusive"` → `"Pending"`)
+- ✅ Removed duplicate entries using `ROW_NUMBER()` and `DELETE`
 
-4. Medical Insights
-Most common medical conditions.
-Average billing by Admission_Type.
+---
 
-📈 Visualizations (Power BI)
-The Power BI report (Visual Representation.pbix) includes:
-Pie charts showing hospital patient distribution.
-Bar charts for top hospitals by billing.
-Line/area charts for billing trends.
-Tables for top patients and medical conditions.
+## 📊 Analytical Queries
 
-🔧 Tools & Technologies
-SQL Server – for data transformation and analysis.
-Power BI – for dashboard and report generation.
-CSV – as the base data format.
+### 🔹 Hospital Insights
+- Count of patients per hospital
+- Average hospital stay duration using `DATEDIFF()`
+- Ranked hospitals by:
+  - Average billing
+  - Total billing
+  - Patient volume
 
-📌 Key Learnings
-Data cleansing with SQL (renaming, formatting, standardization).
+### 🔹 Patient-Level Insights
+- Patients with the highest billing per hospital
+- Top 10 clients by overall billing
+- Detection of unidentified (negative) billing entries
 
-Advanced SQL: window functions, aggregation, and ranking.
+### 🔹 Medical Insights
+- Most common medical conditions
+- Average billing grouped by `Admission_Type`
 
-Dashboard storytelling using Power BI for healthcare stakeholders.
+---
+
+## 📈 Visualizations (Power BI)
+
+The Power BI dashboard (`Visual Representation.pbix`) includes:
+
+- 📌 Pie charts for patient distribution by hospital
+- 📊 Bar charts ranking top hospitals by billing
+- 📉 Line/area charts for billing trends
+- 📋 Tabular reports for top patients and common conditions
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **SQL Server** – data cleaning and transformation
+- **Power BI** – report building and visualization
+- **CSV** – raw dataset format
+
+---
+
+## 📌 Key Learnings
+
+- Cleaning and transforming healthcare data using SQL
+- Advanced SQL operations including window functions, aggregation, and ranking
+- Visual storytelling with Power BI to inform healthcare decisions
+
+---
+
+## 📬 Contact
+
+**Md. Mahabub Alam Mahin**  
+Feel free to reach out on [GitHub](https://github.com/) or [LinkedIn](https://linkedin.com/) for any questions or feedback.
 
