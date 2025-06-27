@@ -61,7 +61,3 @@ The Power BI dashboard (`Visual Representation.pbix`) includes:
 - Cleaning and transforming healthcare data using SQL
 - Advanced SQL operations including window functions, aggregation, and ranking
 - Visual storytelling with Power BI to inform healthcare decisions
-
----
-
-
